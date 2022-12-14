@@ -13,5 +13,3 @@ class TodoViewset(viewsets.ModelViewSet):
     queryset = Todo.objects.all()
     serializer_class = TodoSerializer
 
-def home(request):
-    return render(request, 'index.html')

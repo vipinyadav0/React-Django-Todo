@@ -11,5 +11,4 @@ router.register(r'todos', views.TodoViewset, 'todos')
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('home/', views.home)
 ]
