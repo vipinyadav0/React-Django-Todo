@@ -104,16 +104,11 @@ class App extends Component {
       </li>
     ));
   };
-  // ///////////////////////////////////////////////////////////
 
-  ////add this after modal creation
-  toggle = () => {//add this after modal creation
-    this.setState({ modal: !this.state.modal });//add this after modal creation
+  toggle = () => {
+    this.setState({ modal: !this.state.modal });
   };
-  // handleSubmit = item => {//add this after modal creation
-  //   this.toggle();//add this after modal creation
-  //   alert("save" + JSON.stringify(item));//add this after modal creation
-  // };
+
 
   // Submit an item
   handleSubmit = item => {
@@ -137,9 +132,7 @@ class App extends Component {
       .delete(`http://localhost:8000/api/v1/todos/${item.id}/`)
       .then(res => this.refreshList());
   };
-  // handleDelete = item => {//add this after modal creation
-  //   alert("delete" + JSON.stringify(item));//add this after modal creation
-  // };
+
 
   // Create item
   createItem = () => {
@@ -153,7 +146,6 @@ class App extends Component {
   };
 
 
-  // -I- Start by visual effects to viewer
   render() {
     return (
       <main className="content">
