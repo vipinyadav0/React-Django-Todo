@@ -9,3 +9,7 @@ Frontend running on localhost:3000 port
 4. source env/bin/activate
 5. pip install -r requirements.txt
 6. python manage.py runserver
+* Fronend
+1. cd .. && cd frontend
+2. npm install
+3. npm run start
